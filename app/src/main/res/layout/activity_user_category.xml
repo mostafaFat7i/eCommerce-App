@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Buyers.UserCategoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/new_products_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Categories"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/categories_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent" />
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/category_layout"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_tshirts"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="T-Shirts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:onClick="GoToShirtsProducts"-->
+<!--            android:padding="5dp"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_sport_tshirts"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sport T-Shirts"-->
+<!--            android:padding="5dp"-->
+<!--            android:onClick="GoToSportShirtsProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_femail_dress"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Femail Dress"-->
+<!--            android:padding="5dp"-->
+<!--            android:onClick="GoToFemailDressProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_sweater"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sweater"-->
+<!--            android:onClick="GoToSweaterProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:padding="5dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_glasses"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Glasses"-->
+<!--            android:onClick="GoToGlassesProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:padding="5dp"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_bags"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Wallet Bag"-->
+<!--            android:onClick="GoToBagsProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:padding="5dp"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_caps"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hates Cap"-->
+<!--            android:onClick="GoToHatesCapProducts"-->
+
+<!--            android:padding="5dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_shoes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Shoesses"-->
+<!--            android:onClick="GoToShoessesProducts"-->
+
+<!--            android:padding="5dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_head_phone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Head Phones"-->
+<!--            android:onClick="GoToHeadPhonesProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:padding="5dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_laptop"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Labtop"-->
+<!--            android:onClick="GoToLabtopProducts"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_watches"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Watches"-->
+<!--            android:onClick="GoToWatchesProducts"-->
+<!--            android:padding="5dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/category_mobiles"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Mobiles"-->
+<!--            android:onClick="GoToMobilesProducts"-->
+<!--            android:padding="5dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

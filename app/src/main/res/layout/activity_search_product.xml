@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SearchProductActivity">
+
+
+    <LinearLayout
+        android:id="@+id/search_products_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:onClick="GoToUserHomeActivity"
+            android:src="@drawable/back"/>
+
+        <EditText
+            android:id="@+id/search_product_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Product Name..."
+            android:padding="9dp"
+            android:background="@drawable/input_text"
+            android:backgroundTint="@color/colorWhite"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            />
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_toRightOf="@+id/search_product_name"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_products_layout"/>
+
+
+
+</RelativeLayout>
